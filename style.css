@@ -4,3 +4,97 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 1rem;
+}
+
+header{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    position: sticky;
+    top: 0px;
+}
+
+header nav{
+    background-color: rgba(22, 22, 23, .8);
+    display: flex;
+    justify-content: end;
+    padding: 20px; 
+    display: none;
+}
+@media(min-width:970px){
+    header nav{
+        display: flex;
+    }
+}
+
+.menuNav{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.itemDistinto{
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
+    background-color: white;
+    padding: 8px 20px;
+}
+
+.linkNav{
+    color: white;
+    text-decoration: none;
+}
+
+.linkDistinto{
+    color: black;
+    text-decoration: none;
+}
+
+#presentacion{
+    margin-top:74px;
+    text-align: center;
+    padding-block: 80px;
+}
+
+.saludo{
+    font-size: 2rem;
+    font-weight:bolder;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 2.7rem;
+    font-weight:bolder;
+    color: #ff0088;
+    margin-bottom: 10px;
+}
+.profesion{
+    margin-block: 40px;
+}
+
+button{
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
+    color: white;
+    background-color: #ff0088;
+    padding: 12px 35px;
+    border: none;
+    font-size: 1rem;
+    font-weight:bolder;
+
+    
+
+}
+
+
+img{
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+}
+
