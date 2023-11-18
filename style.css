@@ -162,7 +162,9 @@ h2 {
   gap: 20px;
   justify-content: center;
   justify-items: center;
-  margin-block: 50px;
+  padding-block: 50px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 @media (min-width: 970px) {
@@ -182,6 +184,7 @@ h2 {
   justify-content: center;
   align-items: center;
   max-width: 255px;
+  width: 100%;
 }
 
 .cardConocimentos:hover {
