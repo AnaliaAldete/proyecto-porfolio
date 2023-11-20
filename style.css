@@ -10,7 +10,7 @@ body {
   padding-top: 0px;
   font-size: 1rem;
 }
-
+/* INICIO HEADER */
 header {
   width: calc(100% + 40px);
   margin-left: -20px;
@@ -32,45 +32,52 @@ header nav {
   }
 }
 
-.menuNav {
+/* INICIO MENU DEL HEADER */
+
+.menu_nav{
   display: flex;
   gap: 30px;
   list-style-type: none;
   align-items: center;
 }
 
-.itemDistinto {
+.item_distinto{
   border-radius: 20px;
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
   background-color: white;
   padding: 8px 20px;
 }
 
-.linkNav {
+.link_nav{
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.linkDistinto {
+.link_distinto{
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
-.linkNav:hover,
-.linkDistinto:hover {
+.link_nav:hover,
+.link_distinto:hover{
   color: #ff0088;
 }
+/* FIN MENU DEL HEADER */
 
-#presentacion {
+/* FIN DEL HEADER */
+
+/* INICIO DE LA 1RA SECCIÓN:PRESENTACIÓN */
+
+#seccion_presentacion {
   margin-top: 100px;
   text-align: center;
   padding: 80px 20px;
 }
 
 @media (min-width: 970px) {
-  #presentacion {
+  #seccion_presentacion {
     display: flex;
     width: 100%;
     max-width: 1100px;
@@ -102,7 +109,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-.botonPresentación {
+.boton_presentación {
   border-radius: 20px;
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
   color: white;
@@ -112,24 +119,24 @@ h1 {
   text-decoration: none;
 }
 
-.botonPresentación:hover {
+.boton_presentación:hover {
   color: black;
 }
 
-.ImgMujer {
+.Img_mujer {
   margin-top: 50px;
   width: 100%;
 }
 
 @media (min-width: 970px) {
-  .ImgMujer {
+  .Img_mujer {
     margin: 0px;
     width: 50%;
   }
 }
 
 @media (min-width: 970px) {
-  .ContainerPresentación {
+  .Container_presentación {
     width: 50%;
     max-width: 1100px;
     display: flex;
@@ -139,7 +146,11 @@ h1 {
   }
 }
 
-#conocimientos {
+/* FIN DE LA 1RA SECCIÓN:PRESENTACIÓN */
+
+/* INICIO DE LA 2DA SECCIÓN:CONOCIMIENTOS */
+
+#seccion_conocimientos {
   text-align: center;
   scroll-margin-top: 74px;
   background-color: #ff0088;
@@ -156,7 +167,7 @@ h2 {
   font-weight: bolder;
 }
 
-.containerCard {
+.container_card_conocimientos{
   display: grid;
   grid-template-columns: repeat(2, 45%);
   gap: 20px;
@@ -168,16 +179,16 @@ h2 {
 }
 
 @media (min-width: 970px) {
-  .containerCard {
+  .container_card_conocimientos {
     grid-template-columns: repeat(3, 25%);
   }
 }
 
-.cardConocimentos {
+.card_conocimentos {
   border-radius: 10px;
   padding: 10px;
   background-color: white;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
@@ -187,13 +198,13 @@ h2 {
   width: 100%;
 }
 
-.cardConocimentos:hover {
+.card_conocimentos:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
 
 @media (min-width: 970px) {
-  .cardConocimentos {
+  .card_conocimentos {
     padding: 30px;
   }
 }
@@ -210,43 +221,101 @@ h2 {
   }
 }
 
-#conocimientos h3 {
+#seccion_conocimientos h3 {
   font-size: 1rem;
   margin-block: 10px;
 }
 
 @media (min-width: 970px) {
-  #conocimientos h3 {
+  #seccion_conocimientos h3 {
     font-size: 1.3rem;
     margin-block: 20px;
   }
 }
 
-.parrafo-conocimientos {
+.parrafo_conocimientos {
   max-width: 700px;
   margin: auto;
 }
 
-.frase {
+/* FIN DE LA 2DA SECCIÓN:CONOCIMIENTOS */
+
+/* INICIO DE LA 3RA SECCIÓN:FRASE */
+
+.seccion_frase {
   padding: 80px 20px;
-  background-color: black;
-  color: white;
+  color: black;
   text-align: center;
   scroll-margin-top: 74px;
-  width: calc(100% + 40px);
-  margin-left: -20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .fas {
   font-size: 7rem;
 }
 
-.parrafo-frase {
+.parrafo_frase {
   padding: 30px;
+  
+}
+
+.seccion_frase h3 {
+  font-size: 1.7rem;
+}
+
+/* FIN DE LA 3RA SECCIÓN:FRASE */
+
+/* INICIO 4TA SECCION: PROYECTOS */
+
+#seccion_proyectos{
+  text-align: center;
+  scroll-margin-top: 74px;
+  background-color: black;
+  color: white;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 40px;
+   
+}
+
+.parrafo_proyectos{
+  max-width: 700px;
+  margin: auto;
+
+}
+.container_card_proyectos{
+  display: grid;
+  grid-template-columns: 80%;
+  gap: 30px;
+  justify-content: center;
+  padding-block: 50px;
   max-width: 1100px;
   margin: auto;
 }
+@media (min-width: 970px){
+  .container_card_proyectos{
+    grid-template-columns: repeat(3,30%);
+  }
+}
 
-.frase h3 {
-  font-size: 1.7rem;
+.container_card_proyectos img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.card_proyectos{
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
+  aspect-ratio: 1/1;
+}
+
+.card_proyectos:hover {
+  transform: scale(1.1);
+}
+
+#seccion_proyectos h3 {
+  font-size: 1rem;
+  margin-block: 20px;
 }
