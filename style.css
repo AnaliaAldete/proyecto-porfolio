@@ -10,6 +10,7 @@ body {
   padding-top: 0px;
   font-size: 1rem;
 }
+
 /* INICIO HEADER */
 header {
   width: calc(100% + 40px);
@@ -34,36 +35,37 @@ header nav {
 
 /* INICIO MENU DEL HEADER */
 
-.menu_nav{
+.menu_nav {
   display: flex;
   gap: 30px;
   list-style-type: none;
   align-items: center;
 }
 
-.item_distinto{
+.item_distinto {
   border-radius: 20px;
   box-shadow: 5px 5px 15px gray, -5px 5px 15px gray;
   background-color: white;
   padding: 8px 20px;
 }
 
-.link_nav{
+.link_nav {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.link_distinto{
+.link_distinto {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
 .link_nav:hover,
-.link_distinto:hover{
+.link_distinto:hover {
   color: #ff0088;
 }
+
 /* FIN MENU DEL HEADER */
 
 /* FIN DEL HEADER */
@@ -163,11 +165,11 @@ h1 {
 h2 {
   font-size: 2.2rem;
   text-align: center;
-  margin-block: 20px;
+  margin-bottom: 20px;
   font-weight: bolder;
 }
 
-.container_card_conocimientos{
+.container_card_conocimientos {
   display: grid;
   grid-template-columns: repeat(2, 45%);
   gap: 20px;
@@ -209,7 +211,7 @@ h2 {
   }
 }
 
-.fa-brands {
+#seccion_conocimientos .fa-brands {
   font-size: 3.2rem;
   margin-block: 10px;
 }
@@ -260,7 +262,7 @@ h2 {
   padding: 30px;
   max-width: 1100px;
   margin: auto;
-  
+
 }
 
 .seccion_frase h3 {
@@ -271,21 +273,22 @@ h2 {
 
 /* INICIO 4TA SECCION: PROYECTOS */
 
-#seccion_proyectos{
+#seccion_proyectos {
   text-align: center;
   scroll-margin-top: 74px;
-  padding: 40px;
+  padding: 30px;
   max-width: 1100px;
   margin: auto;
-   
+
 }
 
-.parrafo_proyectos{
+.parrafo_proyectos {
   max-width: 700px;
   margin: auto;
 
 }
-.container_card_proyectos{
+
+.container_card_proyectos {
   display: grid;
   grid-template-columns: 80%;
   gap: 30px;
@@ -295,32 +298,36 @@ h2 {
   margin: auto;
 }
 
-@media(min-width:550px){
-  .container_card_proyectos{
-    grid-template-columns: repeat(2,40%);
+@media(min-width:550px) {
+  .container_card_proyectos {
+    grid-template-columns: repeat(2, 40%);
   }
 }
-@media (min-width: 970px){
-  .container_card_proyectos{
-    grid-template-columns: repeat(3,30%);
+
+@media (min-width: 970px) {
+  .container_card_proyectos {
+    grid-template-columns: repeat(3, 30%);
   }
 }
 
 
-.card_proyectos{
+.card_proyectos {
   border-radius: 15px;
   box-shadow: 5px 5px 15px black;
   aspect-ratio: 1/1;
   padding: 10px;
   background-color: black;
-  
+
 }
-@media (min-width: 970px){
-  .card_proyectos{
-  padding: 20px;}}
+
+@media (min-width: 970px) {
+  .card_proyectos {
+    padding: 20px;
+  }
+}
 
 
-.card_proyectos:hover{
+.card_proyectos:hover {
   transform: scale(1.1);
   transition: 0.5s;
   box-shadow: 5px 5px 15px #ff0088;
@@ -328,34 +335,40 @@ h2 {
 
 }
 
-.container_card_proyectos img{
+.container_card_proyectos img {
   width: 70%;
   height: 70%;
   border-radius: 50%;
-  
+
 }
-@media (min-width: 970px){
-  .container_card_proyectos img{
-  width: 80%;
-  height: 80%;
-}}
+
+@media (min-width: 970px) {
+  .container_card_proyectos img {
+    width: 80%;
+    height: 80%;
+  }
+}
 
 #seccion_proyectos h3 {
   font-size: 0.9rem;
   margin-block: 5px;
   color: white;
 }
-@media (min-width: 970px){
-  #seccion_proyectos h3 {
-  font-size: 1rem;
-  margin-block: 10px;}}
 
-#seccion_proyectos h3:hover{
-  color: #ff0088; /* agregue esto porque no funciona el hover anterior */
+@media (min-width: 970px) {
+  #seccion_proyectos h3 {
+    font-size: 1rem;
+    margin-block: 10px;
+  }
+}
+
+#seccion_proyectos h3:hover {
+  color: #ff0088;
+  /* agregue esto porque no funciona el hover anterior */
 }
 
 
-.link_proyectos{
+.link_proyectos {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -364,3 +377,105 @@ h2 {
   text-decoration: none;
 }
 /* FIN 4TA SECCION: PROYECTOS */
+
+/* INICIO 5TA SECCION: CONTACTO */
+
+#seccion_contacto{
+  text-align: center;
+  background-color: #ff0088;
+  scroll-margin-top: 74px;
+  padding: 20px;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+}
+@media (min-width: 970px){
+  #seccion_contacto{
+    padding-block: 120px  
+}}
+
+
+.container_contacto{
+  font-weight: bold;
+}
+
+@media (min-width: 970px){
+.container_contacto{
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -10px 10px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+}
+.container_redes_sociales{
+  width: 45%;
+  text-align: start;
+}
+.container_formulario{
+  width: 45%;
+  text-align: start;
+}
+}
+
+
+.parrafo_contacto{
+  max-width: 700px;
+  margin: auto;
+  padding-block: 20px;
+}
+
+.menu_contacto{
+  list-style-type: none;
+}
+
+.item_contacto{
+  margin-block:30px;
+}
+
+@media (min-width: 970px){
+  .item_contacto{
+    margin-block:0px;
+  }}
+
+
+.link_contacto{
+  text-decoration: none;
+  color: black;
+}
+
+#seccion_contacto .fa-brands{
+  margin-right: 20px;
+  font-size: 1.2rem;
+  }
+
+.container_input{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  margin: 10px;
+  text-align: start;
+}
+
+input, textarea{
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid;
+}
+
+input:focus, textarea:focus{
+  box-shadow:0px 0px 5px  #ff0088 ;
+    border-color: #ff0088; /*no funciona */
+}
+
+
+
+.boton_input{
+  padding:10px 20px;
+  margin-block: 20px;
+}
+
+
