@@ -6,8 +6,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  padding-top: 0px;
+  padding-inline: 20px;
   font-size: 1rem;
 }
 
@@ -383,8 +382,8 @@ h2 {
 #seccion_contacto{
   text-align: center;
   background-color: #ff0088;
-  scroll-margin-top: 74px;
-  padding: 20px;
+  scroll-margin-top: 20px;
+  padding: 40px 20px;
   width: calc(100% + 40px);
   margin-left: -20px;
 }
@@ -398,9 +397,14 @@ h2 {
   font-weight: bold;
 }
 
+.container_redes_sociales{
+  padding-bottom: 40px;
+}
+
 @media (min-width: 970px){
 .container_contacto{
   width: 80%;
+  max-width: 1100px;
   margin: auto;
   padding: 50px;
   border-radius: 15px;
@@ -408,7 +412,6 @@ h2 {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -10px 10px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
 }
 .container_redes_sociales{
   width: 45%;
@@ -429,11 +432,19 @@ h2 {
 
 .menu_contacto{
   list-style-type: none;
+  background-color: white;
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
+@media (min-width: 970px){
+  .menu_contacto{
+    width: 100%;
+    box-shadow: none;
 
-.item_contacto{
-  margin-block:30px;
-}
+  }}
+
 
 @media (min-width: 970px){
   .item_contacto{
@@ -441,19 +452,58 @@ h2 {
   }}
 
 
-.link_contacto{
+.link_contacto {
   text-decoration: none;
+  color: black; 
+  display: inline-flex;
+  align-items: center;
+  padding: 7px; 
+  justify-content: center;
+}
+
+.link_contacto{
   color: black;
 }
 
-#seccion_contacto .fa-brands{
-  margin-right: 20px;
-  font-size: 1.2rem;
+
+@media (min-width: 970px){
+.link_contacto{
+  justify-content: flex-start;
+}
+}
+
+
+.link_contacto:hover{
+  color: #ff0088
   }
+
+#seccion_contacto .fa-brands,#seccion_contacto .fa-solid{
+  margin: 0;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .link_contacto:hover .fa-brands,.link_contacto:hover .fa-solid{
+    color: white;
+    background-color: #ff0088;
+    transition: 0.2s;
+  }
+
+  span{
+    margin-left: 5px;
+  } 
+
+  
 
 .container_input{
   display: flex;
   flex-direction: column;
+
 }
 label{
   margin: 10px;
@@ -463,19 +513,117 @@ label{
 input, textarea{
   border-radius: 20px;
   padding: 15px;
-  border: 1px solid;
+  border: none;
+  background-color: white;
 }
+
+@media (min-width: 970px){
+  input, textarea{
+    background-color: #ff00881c;}}
 
 input:focus, textarea:focus{
-  box-shadow:0px 0px 5px  #ff0088 ;
-    border-color: #ff0088; /*no funciona */
+  box-shadow:0px 0px 10px  #ff0088 ;
+  outline: 0px;
 }
 
+
+input:valid, textarea:valid{
+  border-color: green;
+}
+
+input:invalid, textarea:invalid{
+  border-color: red;
+}
+
+/* no funciona el valid o invalid */
 
 
 .boton_input{
   padding:10px 20px;
   margin-block: 20px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px black, -5px 5px 15px black;
 }
 
+@media (min-width: 970px){
+
+.boton_input{ background-color: #ff008883;}}
+
+
+/* Fin de 5TA SECCION: CONTACTO */
+
+/* INICIO FOOTER */
+
+footer{
+  background-color: black;
+  color: white;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  font-weight: bold;
+
+}
+
+.menu_footer{
+  display: none;
+
+}
+
+@media(min-width: 970px){
+  .menu_footer{
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  align-items: center;
+  }
+}
+
+.link_menu_footer{
+  text-decoration: none;
+  color: white;
+}
+
+@media(min-width: 970px){
+  .link_menu_footer:hover{
+    color: #ff0088;}}
+
+footer .fa-brands, footer .fa-solid{
+  margin: 0;
+  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  footer .fa-brands:hover, .fa-solid:hover{
+    color: black;
+    background-color: #ff0088;
+    transition: 0.2s;
+  }
+
+.icono_corazon{
+  color: red;
+} 
+
+.redes_footer{
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.link_redes{
+  text-decoration: none;
+}
 

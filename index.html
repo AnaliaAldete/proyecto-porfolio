@@ -131,10 +131,10 @@
                 <h2>Contactame</h2>
                 <p class="parrafo_contacto">Si tienes alguna pregunta, una idea emocionante para un proyecto o quieres contactarte conmigo, no dudes en enviarme un mensaje a través del formulario de contacto o en las redes sociales.</p>
                 <ul class="menu_contacto">
-                    <li class="item_contacto"><a href="https://www.instagram.com/analia2503/" class="link_contacto"><i class="fa-brands fa-instagram"></i>@analia2503</a></li>
-                    <li class="item_contacto"><a href="https://github.com/AnaliaAldete" class="link_contacto"><i class="fa-brands fa-github-alt"></i>AnaliaAldete</a></li>
-                    <li class="item_contacto"><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" class="link_contacto"><i class="fa-brands fa-linkedin-in"></i>Analia Aldete</a></li>
-                    <li class="item_contacto"><a href="mailto:ana_292_1@hotmail.com" class="link_contacto"><i class="fa-solid fa-envelope"></i>ana_292_1@hotmail.com</a></li>
+                    <li class="item_contacto"><a href="https://www.instagram.com/analia2503/"    class="link_contacto" target="_blank"><i class="fa-brands fa-instagram"></i><span>@analia2503</span></a></li>
+                    <li class="item_contacto"><a href="https://github.com/AnaliaAldete" class="link_contacto" target="_blank"><i class="fa-brands fa-github-alt"></i><span>AnaliaAldete</span></a></li>
+                    <li class="item_contacto"><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" class="link_contacto" target="_blank"><i class="fa-brands fa-linkedin-in"></i><span> Analia Aldete</span></a></li>
+                    <li class="item_contacto"><a href="mailto:ana_292_1@hotmail.com" class="link_contacto"><i class="fa-solid fa-envelope"></i><span>ana_292_1@hotmail.com</span></a></li>
                 </ul>
             </div>
             <div class="container_formulario">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="container_input">
                     <label for="input__apellido">Apellido*</label>
-                    <input type="text" placeholder="Por ejemplo: Aldete" id="input_apellido" required>
+                    <input type="text" placeholder="Por ejemplo: Aldete" id="input_apellido" required autocomplete="off">
                 </div>
                 <div class="container_input">
                     <label for="input_mail">Email*</label>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="container_input">
                     <label for="input_mensaje">Mensaje*</label>
-                    <textarea id="input_mensaje" placeholder="Escriba un mensaje aquí"></textarea>
+                    <textarea id="input_mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
                 </div>
                 <input type="submit" value="Enviar" class="boton_input">
             </div>
@@ -162,20 +162,22 @@
     </main>
     <footer>
         <nav>
-            <ul>
-                <li><a href="#presentacion">Hola</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <li><a href="#proyectos">proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="menu_footer">
+                <li><a href="#presentacion" class="link_menu_footer">HOLA</a></li>
+                <li><a href="#conocimientos" class="link_menu_footer">CONOCIMIENTOS</a></li>
+                <li><a href="#proyectos" class="link_menu_footer">PROYECTOS</a></li>
+                <li><a href="#contacto" class="link_menu_footer">CONTACTO</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="https://github.com/AnaliaAldete"></a></li>
-            <li><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/"></a></li>
-            <li><a href="mailto:ana_292_1@hotmail.com"></a></li>
+        <ul class="redes_footer">
+            <li><a href="https://www.instagram.com/analia2503/" target="_blank" class="link_redes"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/AnaliaAldete" target="_blank" class="link_redes"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" target="_blank" class="link_redes"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:ana_292_1@hotmail.com" class="link_redes"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
-        <p>Hecho por Analía Aldete</p>
+        <p>Hecho con<span class="icono_corazon">❤</span> por Analía Aldete</p>
     </footer>
 </body>
 
 </html>
+
