@@ -60,8 +60,7 @@ header nav {
   font-weight: bold;
 }
 
-.link_nav:hover,
-.link_distinto:hover {
+.link_nav:hover,.link_distinto:hover {
   color: #ff0088;
 }
 
@@ -81,10 +80,10 @@ header nav {
   #seccion_presentacion {
     display: flex;
     width: 100%;
-    max-width: 1100px;
     margin: auto;
     scroll-margin-top: 74px;
     padding: 110px 20px;
+    justify-content: center;
   }
 }
 
@@ -133,13 +132,14 @@ h1 {
   .Img_mujer {
     margin: 0px;
     width: 50%;
+    max-width: 530px;
   }
 }
 
 @media (min-width: 970px) {
   .Container_presentación {
     width: 50%;
-    max-width: 1100px;
+    max-width: 530px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -222,6 +222,29 @@ h2 {
   }
 }
 
+.fa-html5{
+  color:#e54d26 ;
+}
+.fa-css3-alt{
+  color:#3d8fc6 ;
+}
+.fa-sass{
+  color:#c69 ;
+}
+
+.fa-react{
+  color: #61dafb;
+}
+
+.fa-square-js{
+  color:#f0db4f ;
+}
+.fa-git-alt{
+  color: #f34f29;
+}
+
+
+
 #seccion_conocimientos h3 {
   font-size: 1rem;
   margin-block: 10px;
@@ -256,6 +279,11 @@ h2 {
 .fas {
   font-size: 7rem;
 }
+.icono_comillas{
+  width: 98px;
+  height: 112px;
+  color: white;
+}
 
 .parrafo_frase {
   padding: 30px;
@@ -276,7 +304,6 @@ h2 {
   text-align: center;
   scroll-margin-top: 74px;
   padding: 30px;
-  max-width: 1100px;
   margin: auto;
 
 }
@@ -284,6 +311,7 @@ h2 {
 .parrafo_proyectos {
   max-width: 700px;
   margin: auto;
+  font-weight: bold;
 
 }
 
@@ -326,13 +354,14 @@ h2 {
 }
 
 
-.card_proyectos:hover {
+.card_proyectos:hover{
   transform: scale(1.1);
   transition: 0.5s;
   box-shadow: 5px 5px 15px #ff0088;
   /* no funciona:color: #ff0088; */
-
 }
+
+
 
 .container_card_proyectos img {
   width: 70%;
@@ -354,6 +383,15 @@ h2 {
   color: white;
 }
 
+/* .card_proyectos:hover h3{
+  color: #ff0088;
+} no funciona*/
+
+#seccion_proyectos h3:hover {
+  color: #ff0088;
+   /* agregue esto porque no funciona el hover anterior  */
+} 
+
 @media (min-width: 970px) {
   #seccion_proyectos h3 {
     font-size: 1rem;
@@ -361,10 +399,7 @@ h2 {
   }
 }
 
-#seccion_proyectos h3:hover {
-  color: #ff0088;
-  /* agregue esto porque no funciona el hover anterior */
-}
+
 
 
 .link_proyectos {
@@ -419,7 +454,6 @@ h2 {
 }
 .container_formulario{
   width: 45%;
-  text-align: start;
 }
 }
 
@@ -437,6 +471,7 @@ h2 {
   width: 90%;
   margin: auto;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 @media (min-width: 970px){
   .menu_contacto{
@@ -517,13 +552,21 @@ input, textarea{
   background-color: white;
 }
 
+textarea{
+  height: 150px
+}
+input:focus, textarea:focus{
+  box-shadow:0px 0px 10px black;
+  outline: 0px;
+}
+
 @media (min-width: 970px){
   input, textarea{
-    background-color: #ff00881c;}}
+    background-color: #ff00881c;}
 
-input:focus, textarea:focus{
-  box-shadow:0px 0px 10px  #ff0088 ;
-  outline: 0px;
+    input:focus, textarea:focus{
+      box-shadow:0px 0px 10px  #ff0088 ;
+      outline: 0px;}
 }
 
 
@@ -544,6 +587,7 @@ input:invalid, textarea:invalid{
   background-color: white;
   cursor: pointer;
   box-shadow: 5px 5px 15px black, -5px 5px 15px black;
+  font-weight: bold;
 }
 
 @media (min-width: 970px){
@@ -626,4 +670,6 @@ footer .fa-brands, footer .fa-solid{
 .link_redes{
   text-decoration: none;
 }
+
+/* FIN DEL FOOTER */
 
