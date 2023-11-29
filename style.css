@@ -117,6 +117,7 @@ h1 {
   padding: 12px 35px;
   font-weight: bolder;
   text-decoration: none;
+  display: inline-block;
 }
 
 .boton_presentación:hover {
@@ -461,7 +462,7 @@ h2 {
 .parrafo_contacto{
   max-width: 700px;
   margin: auto;
-  padding-block: 20px;
+  padding-bottom: 30px;
 }
 
 .menu_contacto{
@@ -570,15 +571,25 @@ input:focus, textarea:focus{
 }
 
 
-input:valid, textarea:valid{
-  border-color: green;
+input:valid:focus,
+textarea:valid:focus {
+  box-shadow: 0px 0px 5px green;
 }
 
-input:invalid, textarea:invalid{
-  border-color: red;
+input:invalid:not(:placeholder-shown):focus,
+textarea:invalid:not(:placeholder-shown):focus {
+  box-shadow: 0px 0px 5px red;
 }
 
-/* no funciona el valid o invalid */
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+ input:valid(placeholder-shown),
+textarea:valid(placeholder-shown){
+  border: 1px solid green;
+} 
 
 
 .boton_input{
@@ -586,13 +597,21 @@ input:invalid, textarea:invalid{
   margin-block: 20px;
   background-color: white;
   cursor: pointer;
-  box-shadow: 5px 5px 15px black, -5px 5px 15px black;
+  box-shadow: 5px 5px 10px black;
   font-weight: bold;
+}
+.boton_input:hover{
+  color: #ff0088;
 }
 
 @media (min-width: 970px){
 
-.boton_input{ background-color: #ff008883;}}
+.boton_input{ background-color: #ff0088;}
+
+.boton_input:hover{
+  color: white;
+}
+}
 
 
 /* Fin de 5TA SECCION: CONTACTO */

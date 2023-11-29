@@ -16,10 +16,10 @@
         <nav>
             <!-- INICIO MENU DEL HEADER -->
             <ul class="menu_nav">
-                <li class="item_menu"><a href="#seccion_presentacion" class="link_nav">HOLA</a></li>
-                <li class="item_menu"><a href="#seccion_conocimientos" class="link_nav">CONOCIMIENTOS</a></li>
-                <li class="item_menu"><a href="#seccion_proyectos" class="link_nav">PROYECTOS</a></li>
-                <li class="item_distinto"><a href="#seccion_contacto" class="link_distinto">CONTACTO</a></li>
+                <li class="item_menu"><a href="#seccion_presentacion" class="link_nav" tabindex="1">HOLA</a></li>
+                <li class="item_menu"><a href="#seccion_conocimientos" class="link_nav" tabindex="2">CONOCIMIENTOS</a></li>
+                <li class="item_menu"><a href="#seccion_proyectos" class="link_nav" tabindex="3">PROYECTOS</a></li>
+                <li class="item_distinto"><a href="#seccion_contacto" class="link_distinto" tabindex="4">CONTACTO</a></li>
             </ul>
             <!-- FIN MENU DEL HEADER -->
         </nav>
@@ -32,7 +32,7 @@
                 <p class="saludo">¡Hola! Soy</p>
                 <h1>Analía Aldete</h1>
                 <p class="profesion">Desarroladora web y profesora de matemática</p>
-                <a href="#seccion_proyectos" class="boton_presentación">LO QUE HAGO</a>
+                <a href="#seccion_proyectos" class="boton_presentación" tabindex="5">LO QUE HAGO</a>
             </div>
             <img src="imagenes/mujerprogramadora.jpg" alt="Mujer programando" class="Img_mujer">
         </section>
@@ -103,37 +103,37 @@
             </p>
             <div class="container_card_proyectos">
                 <div class="card_proyectos">
-                    <a href="https://github.com/AnaliaAldete/proyecto-porfolio" target="_blank" class="link_proyectos">
+                    <a href="https://analiaaldete.github.io/proyecto-porfolio/" target="_blank" class="link_proyectos" tabindex="6">
                         <img src="imagenes/proyecto-porfolio2.png" alt="proyecto de mi porfolio">
                         <h3>Porfolio</h3>
                     </a>
                 </div>
                 <div class="card_proyectos">
-                    <a href="https://analiaaldete.github.io/proyecto-final-ada/" target="_blank" class="link_proyectos">
+                    <a href="https://analiaaldete.github.io/proyecto-final-ada/" target="_blank" class="link_proyectos" tabindex="7">
                         <img src="imagenes/proyecto-rick.png" alt="proyecto de Rick and Morthy">
                         <h3>Api Rick and Morty</h3>
                     </a>
                 </div>
                 <div class="card_proyectos">
-                    <a href="https://analiaaldete.github.io/web0/" target="_blank" class="link_proyectos">
+                    <a href="https://analiaaldete.github.io/web0/" target="_blank" class="link_proyectos" tabindex="8">
                         <img src="imagenes/web0.png" alt="Mi primera página web">
                         <h3>Mi primera página web</h3>
                     </a>
                 </div>
                 <div class="card_proyectos">
-                    <a href="#" target="_blank" class="link_proyectos">
+                    <a href="#" target="_blank" class="link_proyectos" tabindex="9">
                         <img src="imagenes/mujer-con-celu.svg" alt="mujer con celular">
                         <h3>Editor de memes</h3>
                     </a>
                 </div>
                 <div class="card_proyectos">
-                    <a href="#" target="_blank" class="link_proyectos">
+                    <a href="#" target="_blank" class="link_proyectos" tabindex="10">
                         <img src="imagenes/controlador-de-gastos.svg" alt="Controlador de gastos">
                         <h3>Controlador de gastos</h3>
                     </a>
                 </div>
                 <div class="card_proyectos">
-                    <a href="#" target="_blank" class="link_proyectos">
+                    <a href="#" target="_blank" class="link_proyectos" tabindex="11">
                         <img src="imagenes/comics.svg" alt="comics">
                         <h3>Buscador de cómics</h3>
                     </a>
@@ -149,30 +149,31 @@
                 <h2>Contactame</h2>
                 <p class="parrafo_contacto">Si tienes alguna pregunta, una idea emocionante para un proyecto o quieres contactarte conmigo, no dudes en enviarme un mensaje a través del formulario de contacto o en las redes sociales.</p>
                 <ul class="menu_contacto">
-                    <li class="item_contacto"><a href="https://github.com/AnaliaAldete" class="link_contacto" target="_blank"><i class="fa-brands fa-github-alt"></i><span>AnaliaAldete</span></a></li>
-                    <li class="item_contacto"><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" class="link_contacto" target="_blank"><i class="fa-brands fa-linkedin-in"></i><span> Analia Aldete</span></a></li>
-                    <li class="item_contacto"><a href="mailto:ana_292_1@hotmail.com" class="link_contacto"><i class="fa-solid fa-envelope"></i><span>ana_292_1@hotmail.com</span></a></li>
+                    <li class="item_contacto"><a href="https://github.com/AnaliaAldete" class="link_contacto" target="_blank" tabindex="12"><i class="fa-brands fa-github-alt"></i><span>AnaliaAldete</span></a></li>
+                    <li class="item_contacto"><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" class="link_contacto" target="_blank" tabindex="13"><i class="fa-brands fa-linkedin-in"></i><span> Analia Aldete</span></a></li>
+                    <li class="item_contacto"><a href="mailto:ana_292_1@hotmail.com" class="link_contacto" tabindex="14"><i class="fa-solid fa-envelope"></i><span>ana_292_1@hotmail.com</span></a></li>
                 </ul>
             </div>
             <div class="container_formulario">
                 <h2>Escribime</h2>
+                <form action="https://formsubmit.co/ana_292_1@hotmail.com" method="POST">
                 <div class="container_input">
                     <label for="input_nombre">Nombre*</label>
-                    <input type="text" placeholder="Por ejemplo: Analía" id="input_nombre" required>
+                    <input type="text" placeholder="Por ejemplo: Analía" name="nombre" id="input_nombre" required tabindex="15">
                 </div>
                 <div class="container_input">
                     <label for="input_apellido">Apellido*</label>
-                    <input type="text" placeholder="Por ejemplo: Aldete" id="input_apellido" required autocomplete="off">
+                    <input type="text" placeholder="Por ejemplo: Aldete" name="apellido" id="input_apellido" required tabindex="16">
                 </div>
                 <div class="container_input">
                     <label for="input_mail">Email*</label>
-                    <input type="email" placeholder="Por ejemplo: ana_292_1@hotmail.com" id="input_mail" required>
+                    <input type="email" placeholder="Por ejemplo: ana_292_1@hotmail.com" name="email" id="input_mail" required tabindex="17">
                 </div>
                 <div class="container_input">
                     <label for="input_mensaje">Mensaje*</label>
-                    <textarea id="input_mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
+                    <textarea id="input_mensaje" placeholder="Escriba un mensaje aquí" name="mensaje" required tabindex="18"></textarea>
                 </div>
-                <input type="submit" value="Enviar" class="boton_input">
+                <input type="submit" value="Enviar" class="boton_input" tabindex="19">
             </div>
             </div>
         </section>
@@ -183,16 +184,16 @@
     <footer>
         <nav>
             <ul class="menu_footer">
-                <li><a href="#seccion_presentacion" class="link_menu_footer">HOLA</a></li>
-                <li><a href="#seccion_conocimientos" class="link_menu_footer">CONOCIMIENTOS</a></li>
-                <li><a href="#seccion_proyectos" class="link_menu_footer">PROYECTOS</a></li>
-                <li><a href="#seccion_contacto" class="link_menu_footer">CONTACTO</a></li>
+                <li><a href="#seccion_presentacion" class="link_menu_footer" tabindex="20">HOLA</a></li>
+                <li><a href="#seccion_conocimientos" class="link_menu_footer" tabindex="21">CONOCIMIENTOS</a></li>
+                <li><a href="#seccion_proyectos" class="link_menu_footer" tabindex="22">PROYECTOS</a></li>
+                <li><a href="#seccion_contacto" class="link_menu_footer" tabindex="23">CONTACTO</a></li>
             </ul>
         </nav>
         <ul class="redes_footer">
-            <li><a href="https://github.com/AnaliaAldete" target="_blank" class="link_redes"><i class="fa-brands fa-github-alt"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" target="_blank" class="link_redes"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="mailto:ana_292_1@hotmail.com" class="link_redes"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://github.com/AnaliaAldete" target="_blank" class="link_redes" tabindex="24"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/anal%C3%ADa-aldete-25416026b/" target="_blank" class="link_redes" tabindex="25"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:ana_292_1@hotmail.com" class="link_redes"><i class="fa-solid fa-envelope" tabindex="26"></i></a></li>
         </ul>
         <p>Hecho con<span class="icono_corazon">❤</span> por Analía Aldete</p>
     </footer>
