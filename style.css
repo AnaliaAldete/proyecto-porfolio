@@ -362,6 +362,17 @@ h2 {
   /* no funciona:color: #ff0088; */
 }
 
+.card_proyectos h3{
+  color: white;
+  font-size: 0.9rem;
+  margin-block: 5px;
+}
+
+.card_proyectos:hover h3{
+  color:#ff0088;
+  
+}
+
 
 
 .container_card_proyectos img {
@@ -378,20 +389,11 @@ h2 {
   }
 }
 
-#seccion_proyectos h3 {
-  font-size: 0.9rem;
-  margin-block: 5px;
-  color: white;
-}
 
-/* .card_proyectos:hover h3{
-  color: #ff0088;
-} no funciona*/
 
-#seccion_proyectos h3:hover {
-  color: #ff0088;
-   /* agregue esto porque no funciona el hover anterior  */
-} 
+
+
+
 
 @media (min-width: 970px) {
   #seccion_proyectos h3 {
